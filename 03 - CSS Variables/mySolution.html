@@ -45,6 +45,12 @@
   </style>
 
   <script>
+  let inputs=document.querySellectorAll('.controls input')
+  inputs.forEach(element => {
+    element.addEventListener('change',(e)=>{
+      console.log(e.target.value)
+    })
+  });
   </script>
 
 </body>
